@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CapitalBlend | Login</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  <link href="/assets/css/loginstyle.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="/index.html" class="logo d-flex align-items-center">
+        <img src="/assets/img/logo.png" alt="">
+        <span>CapitalBlend</span>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/index.html">Home</a></li>
+       
+          <li class="dropdown"><a href="#"><span>Login</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/Content/Buisness People/buisnesslogin.html">Buisness People</a></li>
+              <li><a href="/Content/Investor/investorlogin.html">Investor</a></li>
+              <li><a href="/Content/Buisness Advisor/buisnessadvisorlogin.html">Buisness Advisor</a></li>
+              <li><a href="/Content/Admin/adminlogin.html">Admin</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Sign Up</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/Content/Buisness People/buisnesssignup.html">Buisness</a></li>
+              <li><a href="/Content/Investor/investorsignup.html">Investor</a></li>
+              <li><a href="/Content/Buisness Advisor/buisnessadvisorsignup.html">Buisness Advisor</a></li>
+     
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      
+
+    </div>
+  </header><!-- End Header -->
+  <main>
+    <div class="wrapper">
+        <div class="logo1">
+            <img src="\assets\img\apple-touch-icon.png" alt="">
+        </div>
+        <div class="text-center mt-4 name">
+            <h1>Login</h1>
+            <h2>Buisness Advisor</h2>
+        </div>
+        <div class="error"></div>
+        <form class="p-3 mt-3" id="advisorloginform" >
+            <div class="form-field d-flex align-items-center">
+                <span class="fa fa-envelope"></span>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fa fa-key"></span>
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+            <button class="btn mt-3" type="submit" >Login</button>
+        </form>
+        <div class="text-center fs-6">
+            <a href="#">Forget password?</a> or <a href="#">Sign up</a>
+        </div><br>
+        <h2 style="text-align: center;font-weight: bold;">Join to resolve Buisness Problems</h2>
+    </div>
+  </main>
+
+
+  
+
+  <!-- Template Main JS File -->
+  <script src="/assets/js/main.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
+const firebaseConfig = {
+  apiKey: "AIzaSyA1d_5_pS8yG4oRXZMU-NlIZ8_MGUX3eJ8",
+  authDomain: "capitalblend-e124d.firebaseapp.com",
+  databaseURL: "https://capitalblend-e124d-default-rtdb.firebaseio.com",
+  projectId: "capitalblend-e124d",
+  storageBucket: "capitalblend-e124d.appspot.com",
+  messagingSenderId: "765006869658",
+  appId: "1:765006869658:web:2773ddeb2847c8be8a1b23",
+  measurementId: "G-0389KXQWN9"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
+import {  set, get, child } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
+
+const database = getDatabase();
+
+document.getElementById('advisorloginform').addEventListener('submit', formSubmit);
+
+function retrieveData(email, password) {
+  const usersRef = ref(database, 'advisorusers');
+
+  // Listen for changes in the data
+  onValue(usersRef, (snapshot) => {
+    const data = snapshot.val();
+    let isAuthenticated = false;
+    let matchedPerson=null;
+    
+ 
+
+    // Loop through the data and check authentication
+    for (const key in data) {
+      const user = data[key];
+
+      // Display user data on the page as desired
+   
+     
+
+      if (user.email === email && user.password === password) {
+        isAuthenticated = true;
+        matchedPerson=user;
+        break;
+      }
+    }
+
+    if (isAuthenticated) {
+
+      localStorage.setItem('user', JSON.stringify(matchedPerson));
+      window.location.href="/Content/Buisness Advisor/login/home.html";
+    } else {
+      // Authentication failed, display error message
+      document.querySelector('.error').textContent = "Authentication failed";
+    }
+  });
+}
+
+function formSubmit(e) {
+  e.preventDefault();
+
+  // Get user input
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  // Retrieve data from the Firebase Realtime Database
+  retrieveData(email, password);
+}
+ </script>
+</body>
+
+</html>

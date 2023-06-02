@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CapitalBlend | Login</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  <link href="/assets/css/signupstyle.css" rel="stylesheet">
+
+  
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="/index.html" class="logo d-flex align-items-center">
+        <img src="/assets/img/logo.png" alt="">
+        <span>CapitalBlend</span>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/index.html">Home</a></li>
+       
+          <li class="dropdown"><a href="#"><span>Login</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/Content/Buisness People/buisnesslogin.html">Buisness People</a></li>
+              <li><a href="/Content/Investor/investorlogin.html">Investor</a></li>
+              <li><a href="/Content/Buisness Advisor/buisnessadvisorlogin.html">Buisness Advisor</a></li>
+              <li><a href="/Content/Admin/adminlogin.html">Admin</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Sign Up</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/Content/Buisness People/buisnesssignup.html">Buisness</a></li>
+              <li><a href="/Content/Investor/investorsignup.html">Investor</a></li>
+              <li><a href="/Content/Buisness Advisor/buisnessadvisorsignup.html">Buisness Advisor</a></li>
+     
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      
+
+    </div>
+  </header><!-- End Header -->
+  <main>
+    <div class="wrapper">
+        <div class="logo1">
+            <img src="\assets\img\apple-touch-icon.png" alt="">
+        </div>
+        <div class="text-center mt-4 name">
+            <h1>Sign Up</h1>
+            <h2>Buisness People</h2>
+        </div>
+       <!--Errror message-->
+       <div class="error"></div>
+
+        <form class="p-3 mt-3" method="post" id="buisnesssignup" action="#">
+          <div class="row">
+            
+            <div class="form-field d-flex align-items-center">
+              <span class="fa fa-user"></span>
+              <input type="text" name="fname" id="fname" placeholder="First Name" required>
+          
+          </div>
+         
+            <div class="form-field d-flex align-items-center">
+              <span class="fa fa-user"></span>
+              <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+          </div>
+          </div>
+          <div class="row">
+            <div class="form-field d-flex align-items-center">
+              <span class="fa fa-envelope"></span>
+              <input type="email" name="email" id="email" placeholder="Email" required>
+          </div>
+          <div class="form-field d-flex align-items-center">
+            <span class="fa fa-envelope"></span>
+            <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+        </div>
+          </div>
+          <div class="row">
+            <div class="form-field d-flex" >
+              
+              <textarea style=" font-size:1.2rem ; padding: 10px; border-radius: 20px;   background-color: #ecf0f3;" name="address" id="address" cols="37" rows="4" placeholder="Address" required ></textarea>
+             
+          </div>
+          <br>
+          <div class="form-field d-flex">
+              
+            <textarea style=" font-size:1.2rem ; padding: 10px; border-radius: 20px;   background-color: #ecf0f3;" name="bio" id="bio" cols="37" rows="4" placeholder="Write a Bio about you -" required></textarea>
+           
+        </div>
+          </div>
+          <div class="row">
+
+            <div  style="margin-left: 50%;margin-left: 10%;font-size: 1.2rem;" class=" form-field ">
+             <h3>Gender</h3> 
+              <input  style="height: 20px; width: 20px;" type="radio" name="gender" value="Male" required>
+              <label for="male">Male</label>
+              <input style="height: 20px; width: 20px;" type="radio" name="gender" value="Female" >
+            <label for="male">Female</label>
+          <input style="height: 20px; width: 20px;" type="radio" name="gender" value="Others" >
+          <label for="male">Other</label>
+          </div>
+          <br>
+          <div  style="margin-left: 50%;margin-left: 10%;font-size: 1.2rem;" class="form-field " >
+            <h3>Have you raised funding before ?</h3> 
+             <input  style="height: 20px; width: 20px;" type="radio" name="funding" value="Yes" required >
+             <label for="funding">Yes</label>
+             <input style="height: 20px; width: 20px;" type="radio" name="funding" value="No" >
+           <label for="funding">No</label>
+       
+         </div>
+          </div>
+          <div class="row">
+            <div class="form-field ">
+              <label for="role"><h3>What define You best</h3></label>
+              <select name="role" id="role" required>
+               
+                <option value="Buisness Owner">Buisness Owner</option>
+                <option value="Student">Student</option>
+                <option value="StartUp Founder">StartUp Founder</option>
+                <option value="Works For an Organisation">Works For an Organisation</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-field d-flex ">
+              <input type="date" name="date" placeholder="DOB" id="dob" required>
+            </div>
+          </div>
+            <div class="row">
+              <div class="form-field d-flex align-items-center">
+                <span class="fa fa-key"></span>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="form-field d-flex align-items-center">
+              <span class="fa fa-key"></span>
+              <input type="password" name="cpassword" id="confirmpassword" placeholder=" Confirm Password" required>
+          </div>
+            </div>
+            <button type="submit" name="buisnessregister" id="buisnessregister"  class="btn mt-3" sendMessage()>Sign Up</button>
+        </form>
+        
+        <br>
+        <h2 style="text-align: center;font-weight: bold;">Join Today to Raise Fund and grow</h2>
+    </div>
+  </main>
+
+
+  
+
+  <!-- Template Main JS File -->
+  <!--<script src="/assets/js/main.js"></script>-->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyA1d_5_pS8yG4oRXZMU-NlIZ8_MGUX3eJ8",
+  authDomain: "capitalblend-e124d.firebaseapp.com",
+  databaseURL: "https://capitalblend-e124d-default-rtdb.firebaseio.com",
+  projectId: "capitalblend-e124d",
+  storageBucket: "capitalblend-e124d.appspot.com",
+  messagingSenderId: "765006869658",
+  appId: "1:765006869658:web:2773ddeb2847c8be8a1b23",
+  measurementId: "G-0389KXQWN9"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+console.log(app);
+
+import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
+import {  get, child } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
+
+
+//listen for submit event//(1)
+document
+.getElementById('buisnesssignup')
+.addEventListener('submit', formSubmit);
+
+//Submit form(2)
+function formSubmit(e) {
+e.preventDefault();
+// Get Values from the DOM
+let fname = document.querySelector('#fname').value;
+let lname = document.querySelector('#lname').value;
+let email = document.querySelector('#email').value;
+let phone = document.querySelector('#phone').value;
+let address = document.querySelector('#address').value;
+let bio = document.querySelector('#bio').value;
+let gender=document.querySelector('input[name="gender"]:checked').value;
+let funding=document.querySelector('input[name="funding"]:checked').value;
+let role = document.querySelector('#role').value;
+let dob = document.querySelector('#dob').value;
+let password = document.querySelector('#password').value;
+let confirmpassword = document.querySelector('#confirmpassword').value;
+
+
+  // Perform a query to find a user with the given email
+  
+if (password !== confirmpassword) {
+    // Passwords do not match, display error message
+    document.querySelector('.error').textContent = "Passwords do not match";
+    setTimeout(function() {
+      document.querySelector('.error').style.display='none' ;// Hide the error message
+    }, 5000);
+  
+  }  else {
+        // User is not registered, proceed with registration
+        document.querySelector('.error').textContent = "Registered Successfully";
+         sendMessage(fname,lname, email,phone,address,bio,gender,funding,role,dob, password, confirmpassword);
+         //document.querySelector('.error').textContent = "Registered Successfully";
+        // Register the user in Firebase
+      }
+    }
+  
+  
+
+    // Passwords match, proceed with form submission
+   
+
+
+//Send Message to Firebase(4)
+function sendMessage(fname,lname, email,phone,address,bio,gender,funding,role,dob, password, confirmpassword) {
+const database = getDatabase();
+
+set(ref(database, 'buisnesssusers/' + Math.floor(Math.random() * 10000000)), {
+fname: fname,
+lname: lname,
+email: email,
+phone: phone,
+address: address,
+bio: bio,
+gender: gender,
+funding:funding,
+role: role,
+dob: dob,
+password: password, 
+confirmpassword:confirmpassword
+}).then(() => {
+  //Show Alert Message(5)
+
+document.getElementById('buisnesssignup').reset();
+
+}).catch((error) => {
+alert(error)
+})
+}
+ </script>
+
+ 
+</body>
+
+</html>
